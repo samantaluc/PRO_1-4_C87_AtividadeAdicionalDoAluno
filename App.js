@@ -8,6 +8,8 @@ import IssLocationScreen from "./screens/IssLocation";
 import MeteorScreen from "./screens/Meteors";
 import UpdateScreen from "./screens/Updates";
 
+// Importações de bibliotecas e componentes necessários
+
 const Stack = createStackNavigator();
 
 function App() {
@@ -16,6 +18,7 @@ function App() {
       <Stack.Navigator initialRouteName="IssLocation" screenOptions={{
         headerShown: false
       }}>
+        {/* Configuração do navegador de pilha (Stack Navigator) */}
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="IssLocation" component={IssLocationScreen} />
         <Stack.Screen name="Meteors" component={MeteorScreen} />
@@ -24,5 +27,7 @@ function App() {
     </NavigationContainer>
   );
 }
+
+// Componente principal do aplicativo
 
 export default App;
